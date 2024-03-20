@@ -1,9 +1,9 @@
-// A mixed bag of items
-let mixedArray = [1, "apple", 2, "banana", true, "carrot"];
+// A list of grades
+let grades = [88, 94, 72, 99, 53, 77];
 
-// Picks out only the words
-let stringsArray = mixedArray.filter(item => typeof item === "string");
+// Calculates the average grade
+let averageGrade = grades.reduce((total, grade) => total + grade, 0) / grades.length;
 
-// Shows the list of just words
-console.log(stringsArray); // Output: ["apple", "banana", "carrot"]
-// This line checks each item: if it's a word, it goes into the new list.
+// Shows the average grade
+console.log(averageGrade);
+// First, we add up all the grades. Then, we divide by how many grades there are to get the average.
